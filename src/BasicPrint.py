@@ -68,14 +68,14 @@ def main():
     if dev is None:  # if no such device is connected...
         raise IOError('Printer  not found')  # ...report error
 
-    if dev.is_kernel_driver_active(0):
-        try:
-            dev.detach_kernel_driver(0)
-            print "kernel driver detached"
-        except usb.core.USBError as e:
-                sys.exit("Could not detach kernel driver: ")
-    else:
-        print "no kernel driver attached"
+#    if dev.is_kernel_driver_active(0):
+#        try:
+#            dev.detach_kernel_driver(0)
+#            print "kernel driver detached"
+#        except usb.core.USBError as e:
+#                sys.exit("Could not detach kernel driver: ")
+#    else:
+#        print "no kernel driver attached"
 
     try:
         # Linux requires USB devices to be reset before configuring, may not be

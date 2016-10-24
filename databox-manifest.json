@@ -1,0 +1,36 @@
+{
+  "manifest-version": 1,
+
+  "name": "databox-driver-pipsta",
+  "version": "0.1.0",
+
+  "description": "A simple Databox driver for the pipsta printer http://www.pipsta.co.uk/",
+  "author": "Anthony Brown <Anthony.Brown@nottingham.ac.uk> ()",
+  "license": "MIT",
+
+	"databox-type":"driver",
+
+  "tags": [
+    "native",
+    "driver",
+    "printer",
+    "pipsta"
+  ],
+
+  "homepage": "https://github.com/me-box/databox-driver-pipsta",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/me-box/databox-driver-pipsta.git"
+  },
+
+  "network-permissions": [
+  ],
+  
+  "hardware-permissions": [
+    "usb"
+  ],
+
+  "resource-requirements": {
+    "store":"databox-store-blob"
+  }
+}

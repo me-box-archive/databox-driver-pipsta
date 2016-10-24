@@ -62,7 +62,7 @@ databox_directory.register_driver('databox','databox-driver-pipsta', 'A Databox 
   .then((dataStoreId) => {
     DATASTORE_ID = dataStoreId;
     proms = [                            
-      databox_directory.register_actuator(DRIVER_ID, ACTUATOR_TYPE_IDs[0].id, 1, VENDOR_ID, 'printer', 'Pipsta printer actuator', ''),
+      databox_directory.register_actuator(DRIVER_ID, ACTUATOR_TYPE_IDs[0].id, DATASTORE_ID, VENDOR_ID, 'printer', 'Pipsta printer actuator', ''),
     ]
     return Promise.all(proms);
   })
